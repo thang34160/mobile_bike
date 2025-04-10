@@ -1,12 +1,67 @@
-#logo_txt {
-    font-size: 12.5925px;
-    font-family: 'DOVENS Personal Use';
+@font-face {
+    font-family: CenturyGothic;
+    src: url("./../Ressources/Font/Century_Gothic/CenturyGothic.ttf");
+}
+
+header {
+    border-bottom: solid 1px #162d50;
+    height: 70px;
+    font-size: 1em;
+    font-family: CenturyGothic;
+    color: #006680;
+    width: 100%;
+    box-shadow: 0 2px 0 0 #162d5019;
+    background-color: #F7F7F7;
+    padding-top: 1%;
+}
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 1%;
+    & :hover{
+        font-weight: bold;
+        color: #162d50;
+    }
+    & button:hover {
+        color :#F7F7F7;
+        background-color: #162d50;
+    }
+    & #cart:hover {
+        fill: #162d50;
+    }
+}
+
+li {
+    padding-right: 2%;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #006680;
+    color:#F7F7F7;
+    font-weight: bold;
+    border : none;
+    padding: 15%;
+}
+
+#cart {
     fill: #006680;
-    stroke-width: 0.16854;
+}
+
+#right {
+    margin-left: auto;
+    margin-right:1%
+}
+
+#logo_txt {
+    fill: #006680;
 }
 
 #logo_img {
-
     fill: #162d50;
-    fill-opacity: 1;
+}
+
+* {
+    margin: 0px;
 }
